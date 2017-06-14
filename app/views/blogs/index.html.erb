@@ -1,19 +1,5 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Blogs</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @blogs.each do |blog| %>
+<%= link_to 'New Blog', new_blog_path %>
+<% @blogs.each do |blog| %>
       <ul>
         <li>
           <%= image_tag blog.image %>
@@ -21,7 +7,7 @@
         <li>
           <%= blog.title %>
         </li>
-      
+
         <li>
           <%= link_to 'Show', blog %>
         </li>
@@ -33,9 +19,4 @@
         </li>
       </ul>
     <% end %>
-  </tbody>
-</table>
-
 <br>
-
-<%= link_to 'New Blog', new_blog_path %>
