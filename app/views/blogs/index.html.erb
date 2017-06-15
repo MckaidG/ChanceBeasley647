@@ -1,22 +1,19 @@
-<%= link_to 'New Blog', new_blog_path %>
-<% @blogs.each do |blog| %>
-      <ul>
-        <li>
-          <%= image_tag blog.image %>
-        </li>
-        <li>
-          <%= blog.title %>
-        </li>
-
-        <li>
-          <%= link_to 'Show', blog %>
-        </li>
-        <li>
-          <%= link_to 'Edit', edit_blog_path(blog) %>
-        </li>
-        <li>
-          <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
-        </li>
-      </ul>
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-3">Chance Beasley</h1>
+    <p class="lead jumbo-sub">647</p>
+  </div>
+</div>
+ <% @blogs.each do |blog| %>
+<div class="album text-muted">
+      <div class="container">
+        <div class="row">
+            <div style="margin:0 auto">
+            <%= image_tag blog.image, class: 'blog-image' %>
+            <span ><%= link_to blog.title, blog_path(blog.id), class: "btn btn-md btn-secondary btn-block" %></span>
+          </div>
+        </div>
+      </div>
+    </div>
     <% end %>
-<br>
+<%= link_to 'New Blog', new_blog_path, class: 'btn btn-md btn-secondary' %>
