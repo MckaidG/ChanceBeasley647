@@ -1,0 +1,8 @@
+1. Basic blog with commenting funtionality (maybe actioncable) 
+
+2. devise user for admin only dont want others creating accounts 
+
+3. home page will be the blogs index page with links to sponsor or dm him 
+link to socal media page
+
+4. social media page will have instagram api to auto upload images from his personal account 

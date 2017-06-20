@@ -4,8 +4,11 @@
 ul {
   list-style-type: none;
 }
+
 body {
-  min-height: 75rem; /* Can be removed; just added for demo purposes */
+  min-height: 75rem;
+  background-color: black;
+
 }
 
 .navbar {
@@ -35,7 +38,7 @@ body {
   min-height: 50rem; /* Can be removed; just added for demo purposes */
   padding-top: 3rem;
   padding-bottom: 3rem;
-  background-color: #f7f7f7;
+  background-color: #3b3b3b;
 }
 
 .card {
@@ -67,4 +70,13 @@ footer p {
 .jumbo-sub {
   text-align: center;
   font-size: 40px;
+}
+
+.blog_index {
+  background-color: rgba(105, 105, 105, 0.4);
+  border-radius: 15px;
+}
+
+.blog-main {
+margin-right: 200px;
 }
