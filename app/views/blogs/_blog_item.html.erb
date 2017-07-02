@@ -1,2 +1,9 @@
-
-<!-- <%= link_to 'Destroy', blog(blog.id), method: :delete, data: { confirm: 'Are you sure?' } %> -->
+<div class="card">
+    <div class="image_link">
+        <%= link_to(image_tag(blog_item.image, width: '100%'), blog_path(blog_item.id)) %>
+        <hr style='height:2px;background-color:white;'>
+    </div>
+    <div class="card-block">
+        <h4 class="card-title"><%= blog_item.title %></h4>
+    </div>
+</div>

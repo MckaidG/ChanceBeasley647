@@ -1,19 +1,12 @@
 <div class="jumbotron jumbotron-fluid blog_jumbo">
-  <div class="container">
-    <h1 class="display-3">Chance Beasley</h1>
-    <p class="lead jumbo-sub">647</p>
-  </div>
-</div>
- <% @blogs.each do |blog| %>
-<div class="album text-muted blog_index">
-      <div class="container">
-        <div class="row">
-            <div style="margin:0 auto">
-            <%= image_tag blog.image, class: 'blog-image' %>
-            <span ><%= link_to blog.title, blog_path(blog.id), class: "btn btn-md btn-secondary btn-block" %></span>
-          </div>
-        </div>
-      </div>
+    <div class="container">
+        <h1 class="display-3">CHANCE BEASLEY</h1>
+
+        <% if current_user.admin %>
+            <%= link_to "New",  new_blog_path, class: "btn btn-block btn-primary" %>
+        <% end %>
     </div>
-    <% end %>
-<%= link_to 'New Blog', new_blog_path, class: 'btn btn-md btn-secondary' %>
+</div>
+<div class="col-md-10">
+    <%= render partial: 'blog_item', collection: @blogs %>
+</div>

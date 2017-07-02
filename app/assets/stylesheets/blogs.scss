@@ -1,82 +1,184 @@
- @import "bootstrap";
-
-
-ul {
-  list-style-type: none;
+@import 'bootstrap'; 
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+body { 
 }
 
-body {
-  min-height: 75rem;
-  background-color: black;
+#background {
 
-}
-
-.navbar {
-  margin-bottom: 0;
-}
-
-.jumbotron {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
-  margin-bottom: 0;
-  background-color: #fff;
-}
-
-.jumbotron p:last-child {
-  margin-bottom: 0;
-}
-
-.jumbotron-heading {
-  font-weight: 300;
-}
-
-.jumbotron .container {
-  max-width: 40rem;
-}
-
-.album {
-  min-height: 50rem; /* Can be removed; just added for demo purposes */
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: #3b3b3b;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: image-url('wallpaper.jpg') no-repeat;
+    background-size: cover;
 }
 
 .card {
-  float: left;
-  width: 33.333%;
-  padding: .75rem;
-  margin-bottom: 2rem;
-  border: 0;
-}
-
-.card > img {
-  margin-bottom: .75rem;
-}
-
-.card-text {
-  font-size: 85%;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: .25rem;
+background-color: rgba(255, 255, 255, 0.35);
+margin: 0 auto; padding: 0;
+margin-bottom: 20px;
+margin-top: 25px;
 }
 
 
-.jumbo-sub {
-  text-align: center;
-  font-size: 40px;
+.card > h1 {
+font-color: white;
 }
 
-.blog_index {
-  background-color: rgba(105, 105, 105, 0.4);
-  border-radius: 15px;
+.card > span {
+text-align: center;
 }
 
-.blog-main {
-margin-right: 200px;
+.card > h4 {
+text-align: center;
+}
+
+.blogs {
+margin: auto;
+border: 2px solid white;
+
+}
+
+.image_link {
+text-align: center;
+padding: 15px;
+margin-top: 15px;
+max-width: '100%';
+}
+
+.card-title {
+text-align: center;
+color: white;
+}
+.show_image {
+margin-top: 30px;
+}
+
+
+.blog-title {
+text-align: center;
+}
+
+.blogs {
+text-align: center;
+margin-top: 25px;
+margin-bottom: 25px;
+}
+
+.blog-content {
+color: white;
+}
+
+
+.jumbotron {
+background-color:rgba(255, 255, 255, 0.00);
+margin-top: 25px; 
+border-radius: 20px;
+}
+
+.display-3 {
+color: rgba(5, 30, 250, 1);
+text-align: center;
+font-family: "Gloria Hallelujah";
+font-size: 6em;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
+    -1px 1px 0 rgba(255, 255, 255, 0.35),
+    1px -1px 0 rgba(255, 255, 255, 0.35),
+    -1px -1px 0 rgba(255, 255, 255, 0.35),
+    0px 1px 0 rgba(255, 255, 255, 0.35),
+    0px -1px 0 rgba(255, 255, 255, 0.35),
+    -1px 0px 0 rgba(255, 255, 255, 0.35),
+    1px 0px 0 rgba(255, 255, 255, 0.35),
+    2px 2px 0 rgba(255, 255, 255, 0.35),
+    -2px 2px 0 rgba(255, 255, 255, 0.35),
+    2px -2px 0 rgba(255, 255, 255, 0.35),
+    -2px -2px 0 rgba(255, 255, 255, 0.35),
+    0px 2px 0 rgba(255, 255, 255, 0.35),
+    0px -2px 0 rgba(255, 255, 255, 0.35),
+    -2px 0px 0 rgba(255, 255, 255, 0.35),
+    2px 0px 0 rgba(255, 255, 255, 0.35),
+    1px 2px 0 rgba(255, 255, 255, 0.35),
+    -1px 2px 0 rgba(255, 255, 255, 0.35),
+    1px -2px 0 rgba(255, 255, 255, 0.35),
+    -1px -2px 0 rgba(255, 255, 255, 0.35),
+    2px 1px 0 rgba(255, 255, 255, 0.35),
+    -2px 1px 0 rgba(255, 255, 255, 0.35),
+    2px -1px 0 rgba(255, 255, 255, 0.35),
+    -2px -1px 0 rgba(255, 255, 255, 0.35);
+}
+.lead {
+color: white;
+text-align: center;
+font-size: 4em;
+}
+.comment-card > .card {
+  margin-top: 15px;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.comment-name {
+  font-weight: 900;
+  color: white;
+  text-decoration: underline;
+
+}
+.comment-content {
+color: white;
+}
+
+/* Nav links */
+.blog-nav {
+background-color: rgba(255, 255, 255, 0.35)
+}
+.nav-link {
+
+  position: relative;
+  padding: 1rem;
+  font-weight: 900;
+  color: white;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+.nav-link.active {
+  color: #fff;
+}
+.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
+}
+.navbar-brand {
+font-size: 2em;
+font-family: 'Courier New';
+font-weight: 1000; 
+}
+.blog-content {
+color: white;
+text-align: center;
+}
+.blog-card > .card {
+
+background-color: rgba(0, 0, 0, 0.75);
+}
+.blog-carousel {
+    margin: 0 auto;
 }

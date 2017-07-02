@@ -1,82 +1,146 @@
- @import "bootstrap";
+@import "bootstrap";
 
- /* Space out content a bit */
+/* Space out content a bit */
 body {
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
 }
+#background {
 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background: image-url('wallpaper.jpg') no-repeat;
+    background-size: cover;
+}
+.title {
+font-family: "brush script m7";
+}
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,
 .footer {
-  padding-right: 1rem;
-  padding-left: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 }
 
 /* Custom page header */
 .header {
-  padding-bottom: 1rem;
-  border-bottom: .05rem solid #e5e5e5;
+    padding-bottom: 1rem;
+    border-bottom: .05rem solid #e5e5e5;
 }
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 3rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: 3rem;
 }
 
 /* Custom page footer */
 .footer {
-  padding-top: 1.5rem;
-  color: #777;
-  border-top: .05rem solid #e5e5e5;
+    padding-top: 1.5rem;
+    color: #777;
+    border-top: .05rem solid #e5e5e5;
 }
 
 /* Customize container */
 @media (min-width: 48em) {
-  .container {
-    max-width: 46rem;
-  }
+    .container {
+        max-width: 46rem;
+    }
 }
 .container-narrow > hr {
-  margin: 2rem 0;
+    margin: 2rem 0;
 }
 
 /* Main marketing message and sign up button */
 .jumbotron {
-  text-align: center;
-  border-bottom: .05rem solid #e5e5e5;
+    text-align: center;
+    border-bottom: .05rem solid #e5e5e5;
+    margin-top: 10px;
 }
 .jumbotron .btn {
-  padding: .75rem 1.5rem;
-  font-size: 1.5rem;
+    padding: .75rem 1.5rem;
+    font-size: 1.5rem;
 }
 
 /* Supporting marketing content */
 .marketing {
-  margin: 3rem 0;
+    margin: 3rem 0;
 }
 .marketing p + h4 {
-  margin-top: 1.5rem;
+    margin-top: 1.5rem;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 48em) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 0;
-    padding-left: 0;
-  }
-  /* Space out the masthead */
-  .header {
-    margin-bottom: 2rem;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
-  }
+    /* Remove the padding we set earlier */
+    .header,
+    .marketing,
+    .footer {
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    /* Space out the masthead */
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    /* Remove the bottom border on the jumbotron for visual effect */
+    .jumbotron {
+        border-bottom: 0;
+    }
 }
 
+/* Nav links */
+.blog-nav {
+background-color: rgba(255, 255, 255, 0.50)
+}
+.nav-link {
+
+  position: relative;
+  padding: 1rem;
+  font-weight: 900;
+  color: white;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff;
+  background-color: transparent;
+}
+
+/* Active state gets a caret at the bottom */
+.nav-link.active {
+  color: #fff;
+}
+.nav-link.active:after {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 0;
+  margin-left: -.3rem;
+  vertical-align: middle;
+  content: "";
+  border-right: .3rem solid transparent;
+  border-bottom: .3rem solid;
+  border-left: .3rem solid transparent;
+}
+.navbar-brand {
+font-size: 2em;
+font-family: 'Courier New';
+font-weight: 1000; 
+}
+h4 {
+color: white;
+}
+p {
+color: white;
+}

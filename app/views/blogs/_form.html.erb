@@ -1,32 +1,41 @@
-<%= form_with(model: blog, local: true) do |form| %>
-  <% if blog.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(blog.errors.count, "error") %> prohibited this blog from being saved:</h2>
 
-      <ul>
-      <% blog.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
+<%= form_for(blog) do |f| %>
+  <% if blog.errors.any? %>
+    <% blog.errors.full_messages.each do |error| %>
+      <%= alert_generator error %>
+    <% end %>
   <% end %>
 
   <div class="form-group">
-    <%= form.label :title %>
-    <%= form.text_field :title, id: :blog_title %>
+    <%= f.text_field :title, class: 'form-control', placeholder: "Title" %>
   </div>
 
   <div class="form-group">
-    <%= form.label :body %>
-    <%= form.text_area :body, id: :blog_body %>
+  <label class="btn btn-primary">
+      Upload Main Image<%= f.file_field :image, style: 'display:none;' %>
+
+  </label>
   </div>
 
   <div class="form-group">
-    <%= form.label :image %>
-    <%= form.text_area :image, id: :blog_image %>
+  <label class="btn btn-primary">
+      Upload Main Image<%= f.file_field :image2, style: 'display:none;' %>
+
+  </label>
   </div>
 
-  <div class="actions">
-    <%= form.submit %>
+  <div class="form-group">
+  <label class="btn btn-primary">
+      Upload Main Image<%= f.file_field :image3, style: 'display:none;' %>
+
+  </label>
+  </div>
+
+  <div class="form-group">
+    <%= f.text_area :body, class: 'form-control', rows: 15, placeholder: "Content" %>
+  </div>
+
+  <div class="form-group">
+    <%= f.submit "Save", class: 'btn btn-info btn-block' %>
   </div>
 <% end %>
