@@ -1,12 +1,18 @@
+
 <div class="jumbotron jumbotron-fluid blog_jumbo">
     <div class="container">
-        <h1 class="display-3">CHANCE BEASLEY</h1>
-
-        <% if current_user.admin %>
-            <%= link_to "New",  new_blog_path, class: "btn btn-block btn-primary" %>
-        <% end %>
+        <% unless current_user.admin %>
+            <h1 class="display-3">Updates</h1>
+    <% end %>
+        </br>
+        <span class="new-blog">
+            <% if current_user.admin %>
+                <%= link_to "New",  new_blog_path, class: "btn btn-lg btn-block btn-warning" %>
+            <% end %>
+        </span>
     </div>
 </div>
-<div class="col-md-10">
+</div>
+<div class="col-md-12">
     <%= render partial: 'blog_item', collection: @blogs %>
 </div>

@@ -1,10 +1,12 @@
 @import "bootstrap";
-
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 /* Space out content a bit */
+
 body {
 }
-#background {
+/* background image */
 
+#background {
     position: fixed;
     top: 50%;
     left: 50%;
@@ -15,7 +17,7 @@ body {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: image-url('wallpaper.jpg') no-repeat;
+    background: image-url('chance.jpg') no-repeat;
     background-size: cover;
 }
 .title {
@@ -101,14 +103,37 @@ font-family: "brush script m7";
 
 /* Nav links */
 .blog-nav {
-background-color: rgba(255, 255, 255, 0.50)
+background-color: rgba(0, 0, 0, 0.80)
 }
 .nav-link {
-
   position: relative;
   padding: 1rem;
   font-weight: 900;
   color: white;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 .nav-link:hover,
 .nav-link:focus {
@@ -120,19 +145,6 @@ background-color: rgba(255, 255, 255, 0.50)
 .nav-link.active {
   color: #fff;
 }
-.nav-link.active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
-}
 .navbar-brand {
 font-size: 2em;
 font-family: 'Courier New';
@@ -140,7 +152,151 @@ font-weight: 1000;
 }
 h4 {
 color: white;
+padding: 15px;
+
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 p {
 color: white;
+padding: 15px;
+padding-top: 0px;
+
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
+.lead {
+color: white;
+}
+
+.jumbotron {
+background-color: rgba(0, 0, 0, 0.50);
+}
+.contact {
+    margin: 8px;
+    padding: 5px;
+background-color: rgba(0, 0, 0, 0.50);
+}
+.app-nav{
+background-color: rgba(0, 0, 0, 0.65)
+}
+
+.app-nav span {
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+.app-nav .brand-nav  {
+color: white;
+font-family: "Gloria Hallelujah";
+font-size: 2.5em;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
+}
+.login-card {
+    margin-top: 35px;
+margin-left: 10%;
+margin-right: 10%;
+}
+.display-3 {
+color: white;
+font-family: "Gloria Hallelujah";
+font-size: 7em;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.button {
+background-color: white;
+margin-top: 10px;
+}
+

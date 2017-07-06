@@ -12,6 +12,8 @@ Devise.setup do |config|
   config.omniauth :linked_in, "KEY", "SECRET"
 
 
+ config.secret_key = 'ff6289501c9d408490e19b6c98ad7c28b1d3d49a23286cee4d57393e3a62b2cf122478e52f274e285794106f0dcfb9241f8b208519330a8c40eee10ac0112041'
+
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class

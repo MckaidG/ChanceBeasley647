@@ -20,7 +20,7 @@ body {
 }
 
 .card {
-background-color: rgba(255, 255, 255, 0.35);
+background-color: rgba(0, 0, 0, 0.50);
 margin: 0 auto; padding: 0;
 margin-bottom: 20px;
 margin-top: 25px;
@@ -77,16 +77,17 @@ color: white;
 
 
 .jumbotron {
-background-color:rgba(255, 255, 255, 0.00);
+background-color:rgba(0, 0, 0, 0.50);
 margin-top: 25px; 
-border-radius: 20px;
 }
 
 .display-3 {
 color: rgba(5, 30, 250, 1);
+font-family: "Avenir";
+font-style: italic;
+font-weight: 900;
+font-size: 6.5em;
 text-align: center;
-font-family: "Gloria Hallelujah";
-font-size: 6em;
 text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
     -1px 1px 0 rgba(255, 255, 255, 0.35),
     1px -1px 0 rgba(255, 255, 255, 0.35),
@@ -111,6 +112,8 @@ text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
     -2px 1px 0 rgba(255, 255, 255, 0.35),
     2px -1px 0 rgba(255, 255, 255, 0.35),
     -2px -1px 0 rgba(255, 255, 255, 0.35);
+    margin-right: 50px;
+    margin-top: 25px;
 }
 .lead {
 color: white;
@@ -118,7 +121,7 @@ text-align: center;
 font-size: 4em;
 }
 .comment-card > .card {
-  margin-top: 15px;
+  margin-top: 5px;
   background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -134,7 +137,7 @@ color: white;
 
 /* Nav links */
 .blog-nav {
-background-color: rgba(255, 255, 255, 0.35)
+background-color: rgba(0, 0, 0, 0.80)
 }
 .nav-link {
 
@@ -142,7 +145,33 @@ background-color: rgba(255, 255, 255, 0.35)
   padding: 1rem;
   font-weight: 900;
   color: white;
+
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
+
 .nav-link:hover,
 .nav-link:focus {
   color: #fff;
@@ -153,32 +182,104 @@ background-color: rgba(255, 255, 255, 0.35)
 .nav-link.active {
   color: #fff;
 }
-.nav-link.active:after {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 0;
-  height: 0;
-  margin-left: -.3rem;
-  vertical-align: middle;
-  content: "";
-  border-right: .3rem solid transparent;
-  border-bottom: .3rem solid;
-  border-left: .3rem solid transparent;
-}
 .navbar-brand {
 font-size: 2em;
 font-family: 'Courier New';
 font-weight: 1000; 
 }
+.blog-title {
+text-align: center;
+
+color: rgba(5, 30, 250, 1);
+text-align: center;
+font-family: "Gloria Hallelujah";
+font-size: 2em;
+text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
+    -1px 1px 0 rgba(255, 255, 255, 0.35),
+    1px -1px 0 rgba(255, 255, 255, 0.35),
+    -1px -1px 0 rgba(255, 255, 255, 0.35),
+    0px 1px 0 rgba(255, 255, 255, 0.35),
+    0px -1px 0 rgba(255, 255, 255, 0.35),
+    -1px 0px 0 rgba(255, 255, 255, 0.35),
+    1px 0px 0 rgba(255, 255, 255, 0.35),
+    2px 2px 0 rgba(255, 255, 255, 0.35),
+    -2px 2px 0 rgba(255, 255, 255, 0.35),
+    2px -2px 0 rgba(255, 255, 255, 0.35),
+    -2px -2px 0 rgba(255, 255, 255, 0.35),
+    0px 2px 0 rgba(255, 255, 255, 0.35),
+    0px -2px 0 rgba(255, 255, 255, 0.35),
+    -2px 0px 0 rgba(255, 255, 255, 0.35),
+    2px 0px 0 rgba(255, 255, 255, 0.35),
+    1px 2px 0 rgba(255, 255, 255, 0.35),
+    -1px 2px 0 rgba(255, 255, 255, 0.35),
+    1px -2px 0 rgba(255, 255, 255, 0.35),
+    -1px -2px 0 rgba(255, 255, 255, 0.35),
+    2px 1px 0 rgba(255, 255, 255, 0.35),
+    -2px 1px 0 rgba(255, 255, 255, 0.35),
+    2px -1px 0 rgba(255, 255, 255, 0.35),
+    -2px -1px 0 rgba(255, 255, 255, 0.35);
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
 .blog-content {
 color: white;
 text-align: center;
+
 }
 .blog-card > .card {
 
 background-color: rgba(0, 0, 0, 0.75);
+margin-left: 10%;
+margin-right: 10%;
 }
 .blog-carousel {
     margin: 0 auto;
+}
+.comment-form {
+margin-left: 10%;
+margin-right: 10%;
+}
+.comment-card {
+margin-left: 10%;
+margin-right: 10%;
+}
+
+.app-nav{
+background-color: rgba(0, 0, 0, 0.60)
+}
+
+
+.app-nav .brand-nav  {
+color: white;
+font-family: "Gloria Hallelujah";
+font-size: 2.5em;
+text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
+}
+.button {
+background-color: white;
+margin-top: 10px;
 }
