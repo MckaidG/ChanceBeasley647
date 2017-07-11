@@ -1,10 +1,11 @@
-@import 'bootstrap'; 
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
-body { 
+@import 'bootstrap';
+
+@import url('https: //fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+body {
 }
 
 #background {
-
     position: fixed;
     top: 50%;
     left: 50%;
@@ -20,75 +21,71 @@ body {
 }
 
 .card {
-background-color: rgba(0, 0, 0, 0.50);
-margin: 0 auto; padding: 0;
-margin-bottom: 20px;
-margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.50);
+    margin: 0 auto; padding: 0;
 }
 
 
 .card > h1 {
-font-color: white;
+    font-color: white;
 }
 
 .card > span {
-text-align: center;
+    text-align: center;
 }
 
 .card > h4 {
-text-align: center;
+    text-align: center;
 }
 
 .blogs {
-margin: auto;
-border: 2px solid white;
-
+    margin: auto;
+    border: 2px solid white;
 }
 
 .image_link {
-text-align: center;
-padding: 15px;
-margin-top: 15px;
-max-width: '100%';
+    text-align: center;
+    padding: 15px;
+    margin-top: 15px;
+    max-width: '100%';
 }
 
 .card-title {
-text-align: center;
-color: white;
+    text-align: center;
+    color: white;
 }
 .show_image {
-margin-top: 30px;
+    margin-top: 30px;
 }
 
 
 .blog-title {
-text-align: center;
+    text-align: center;
 }
 
 .blogs {
-text-align: center;
-margin-top: 25px;
-margin-bottom: 25px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .blog-content {
-color: white;
+    color: white;
 }
 
 
 .jumbotron {
-background-color:rgba(0, 0, 0, 0.50);
-margin-top: 25px; 
+    background-color: rgba(0, 0, 0, 0.0);
+    margin-top: 25px;
 }
 
 .display-3 {
-color: rgba(5, 30, 250, 1);
-font-family: "Avenir";
-font-style: italic;
-font-weight: 900;
-font-size: 6.5em;
-text-align: center;
-text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
+    color: rgba(5, 30, 250, 1);
+    font-family: "Avenir";
+    font-style: italic;
+    font-weight: 900;
+    font-size: 6.5em;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
     -1px 1px 0 rgba(255, 255, 255, 0.35),
     1px -1px 0 rgba(255, 255, 255, 0.35),
     -1px -1px 0 rgba(255, 255, 255, 0.35),
@@ -112,41 +109,41 @@ text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
     -2px 1px 0 rgba(255, 255, 255, 0.35),
     2px -1px 0 rgba(255, 255, 255, 0.35),
     -2px -1px 0 rgba(255, 255, 255, 0.35);
-    margin-right: 50px;
     margin-top: 25px;
 }
 .lead {
-color: white;
-text-align: center;
-font-size: 4em;
+    color: white;
+    text-align: center;
+    font-size: 4em;
 }
 .comment-card > .card {
-  margin-top: 5px;
-  background-color: rgba(0, 0, 0, 0.75);
+    border: 1px solid white;
+    margin: 0 auto; padding: 0;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 
 .comment-name {
-  font-weight: 900;
-  color: white;
-  text-decoration: underline;
-
+    font-weight: 900;
+    color: white;
+    text-decoration: underline;
 }
 .comment-content {
-color: white;
+    color: white;
 }
 
 /* Nav links */
 .blog-nav {
-background-color: rgba(0, 0, 0, 0.80)
+    background-color: rgba(0, 0, 0, 0.80)
 }
 .nav-link {
+    margin-left: 5px;
+    margin-top: 10px;
+    position: relative;
+    padding: 1rem;
+    font-weight: 900;
+    color: white;
 
-  position: relative;
-  padding: 1rem;
-  font-weight: 900;
-  color: white;
-
-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
     -1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -174,27 +171,27 @@ text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
 
 .nav-link:hover,
 .nav-link:focus {
-  color: #fff;
-  background-color: transparent;
+    color: #fff;
+    background-color: transparent;
 }
 
 /* Active state gets a caret at the bottom */
 .nav-link.active {
-  color: #fff;
+    color: #fff;
 }
 .navbar-brand {
-font-size: 2em;
-font-family: 'Courier New';
-font-weight: 1000; 
+    font-size: 2em;
+    font-family: 'Courier New';
+    font-weight: 1000;
 }
 .blog-title {
-text-align: center;
+    text-align: center;
 
-color: rgba(5, 30, 250, 1);
-text-align: center;
-font-family: "Gloria Hallelujah";
-font-size: 2em;
-text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
+    color: rgba(5, 30, 250, 1);
+    text-align: center;
+    font-family: "Gloria Hallelujah";
+    font-size: 4em;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
     -1px 1px 0 rgba(255, 255, 255, 0.35),
     1px -1px 0 rgba(255, 255, 255, 0.35),
     -1px -1px 0 rgba(255, 255, 255, 0.35),
@@ -223,38 +220,36 @@ text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
 }
 
 .blog-content {
-color: white;
-text-align: center;
-
+    color: white;
+    padding: 2em;
 }
 .blog-card > .card {
-
-background-color: rgba(0, 0, 0, 0.75);
-margin-left: 10%;
-margin-right: 10%;
+    margin-bottom: 20px;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.75);
 }
 .blog-carousel {
     margin: 0 auto;
 }
 .comment-form {
-margin-left: 10%;
-margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 .comment-card {
-margin-left: 10%;
-margin-right: 10%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
-.app-nav{
-background-color: rgba(0, 0, 0, 0.60)
+.app-nav {
+    background-color: rgba(0, 0, 0, 0.60)
 }
 
 
-.app-nav .brand-nav  {
-color: white;
-font-family: "Gloria Hallelujah";
-font-size: 2.5em;
-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+.app-nav .brand-nav {
+    color: white;
+    font-family: "Gloria Hallelujah";
+    font-size: 2.5em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
     -1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -280,6 +275,143 @@ text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 .button {
-background-color: white;
-margin-top: 10px;
+    background-color: white;
+    margin-top: 10px;
+}
+#profileimg {
+    margin-bottom: 25px;
+    margin-left: 35px;
+}
+.blog-index-card {
+    margin-top: 10px;
+    background-color: rgba(0, 0, 0, .75);
+    border-radius: 10px;
+}
+
+.blog_image_card {
+    background-color: rgba(255, 255, 255, 0.20);
+}
+.card-title-button {
+    text-decoration: none;
+    color: white;
+    font-size: 1.5em;
+    font-family: "Gloria Hallelujah";
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
+}
+
+.card-title-button:hover {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    font-family: "Gloria Hallelujah";
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
+}
+
+/* Pagination */
+.blog-pagination {
+    margin-bottom: 4rem;
+}
+.blog-pagination > .btn {
+    border-radius: 2rem;
+}
+.sidebar_card {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 5px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+
+
+.pagination a, .pagination span.current, .pagination span.gap {
+    float: left;
+    color: white;
+    padding: 0 14px;
+    line-height: 38px;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.50);
+    border-left-width: 0;
+}
+
+.pagination {
+    border-left: 1px solid #ddd;
+    .first {
+        padding: 0;
+        float: none;
+        border: none;
+    }
+    .prev {
+        padding: 0;
+        float: none;
+        border: none;
+    }
+    .page {
+        padding: 0;
+        float: none;
+        border: none;
+    }
+    .next {
+        padding: 0;
+        float: none;
+        border: none;
+    }
+    .last {
+        padding: 0;
+        float: none;
+        border: none;
+    }
+}
+
+
+.paginate-card {
+    background-color: rgba(0, 0, 0, 0.0);
+
+    margin-top: 25px;
 }

@@ -1,0 +1,11 @@
+
+<div class="col-md-12">
+    <hr>
+    <% unless current_user.is_a?(GuestUser) %>
+        <%= render 'comments/comment_form' %>
+    <% end %>
+    <div id="comments" data-blog-id="<%= @blog.id %>">
+        <br/>
+        <%= render @blog.comments.where(created_at: 1.day.ago..Time.now).order('created_at DESC') %>
+    </div>
+</div>

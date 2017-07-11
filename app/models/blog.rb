@@ -1,7 +1,10 @@
 class Blog < ApplicationRecord
-has_many :comments, dependent: :destroy 
+    has_many :comments, dependent: :destroy
 
-mount_uploader :image, BlogUploader
-mount_uploader :image2, BlogUploader
-mount_uploader :image3, BlogUploader
+    mount_uploader :image, BlogUploader
+    mount_uploader :image2, BlogUploader
+    mount_uploader :image3, BlogUploader
+    def self.recent
+        order("created_at DESC")
+    end
 end

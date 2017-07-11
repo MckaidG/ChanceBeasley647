@@ -1,18 +1,11 @@
 
-<div class="jumbotron jumbotron-fluid blog_jumbo">
-    <div class="container">
-        <% unless current_user.admin %>
-            <h1 class="display-3">Updates</h1>
-    <% end %>
-        </br>
-        <span class="new-blog">
-            <% if current_user.admin %>
-                <%= link_to "New",  new_blog_path, class: "btn btn-lg btn-block btn-warning" %>
-            <% end %>
-        </span>
-    </div>
+<%= render 'shared/blog_jumbotron' %>
+<div class="col-sm-9 blog-main">
+    <%= render partial: 'blog_item', collection: @blogs.order('created_at DESC') %>
+
 </div>
-</div>
-<div class="col-md-12">
-    <%= render partial: 'blog_item', collection: @blogs %>
+
+<%= render 'shared/blog_sidebar' %>
+<div class="card paginate-card">
+    <%= paginate @blogs, theme: 'twitter-bootstrap-4' %>
 </div>
