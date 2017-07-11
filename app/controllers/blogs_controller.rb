@@ -1,4 +1,6 @@
 class BlogsController < ApplicationController
+    before_action :verify_is_admin, :only => [:new, :edit, :create, :destroy]
+
     before_action :set_blog, only: [:show, :edit, :update, :destroy]
     layout 'blog'
     # GET /blogs
@@ -82,5 +84,13 @@ class BlogsController < ApplicationController
                                      :image,
                                      :image2,
                                      :image3)
+    end
+
+    def verify_is_admin
+        if  current_user.admin
+            return
+        else
+            redirect_to root_url
+        end
     end
 end

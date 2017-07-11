@@ -1,5 +1,5 @@
 <div class="col-sm-12 blog-main">
-    <div class="container">
+    <div class="card carousel-card">
         <% if @blog.image? %>
             <div class="container ">
                 <div class="row">
@@ -8,17 +8,17 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
 
-                                    <%= image_tag @blog.image, width: '80%', height: '60%', class: 'blogs' %>
+                                    <%= image_tag @blog.image, width: '90%', height: '60%', class: 'blogs' %>
                                 </div>
                                 <% if @blog.image2? %>
                                     <div class="carousel-item ">
 
-                                        <%= image_tag @blog.image2, width: '80%', height: '60%', class: 'blogs' %>
+                                        <%= image_tag @blog.image2, width: '90%', height: '60%', class: 'blogs' %>
                                     </div>
                                     <% if @blog.image3? %>
                                         <div class="carousel-item">
 
-                                            <%= image_tag @blog.image3, width: '80%', height: '60%', class: 'blogs' %>
+                                            <%= image_tag @blog.image3, width: '90%', height: '60%', class: 'blogs' %>
                                         </div>
                                     <% end %>
                                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

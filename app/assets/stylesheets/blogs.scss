@@ -224,9 +224,7 @@ body {
 }
 .blog-card > .card {
     margin: 0 auto;
-    width: 75%;
     text-align: center;
-    margin-bottom: 20px;
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.75);
 }
@@ -282,8 +280,8 @@ body {
     margin-top: 10px;
 }
 #profileimg {
+    margin: 0 auto;
     margin-bottom: 25px;
-    margin-left: 35px;
 }
 .blog-index-card {
     margin-top: 10px;
@@ -419,3 +417,8 @@ body {
 margin: 0 auto;
     margin-top: 25px;
 }
+.blog-footer {
+margin-top: 100px;
+}
+.carousel-card {
+margin-top: 25px;}
