@@ -1,12 +1,12 @@
 <div class="jumbotron jumbotron-fluid blog_jumbo">
-    <div class="container">
-        <%= image_tag "updateds.png", width: "90%", alt: "updates", id: 'profileimg' %>
+    <div class="container jumbo">
+            <%= image_tag "updateds.png", width: "90%", alt: "updates", id: 'profileimg' %>
 
-        </br>
-        <span class="new-blog">
-            <% if current_user.admin %>
-                <%= link_to "New",  new_blog_path, class: "btn btn-lg btn-block btn-warning" %>
-            <% end %>
-        </span>
+            </br>
+            <span class="new-blog">
+                <% if current_user.admin %>
+                    <%= link_to "New",  new_blog_path, class: "btn btn-lg btn-block btn-warning" %>
+                <% end %>
+            </span>
     </div>
 </div>
