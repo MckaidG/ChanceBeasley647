@@ -178,7 +178,7 @@ body {
 }
 .navbar-brand {
     font-size: 2em;
-font-style: italic;
+    font-style: italic;
     font-family: "Avenir";
     font-weight: 1000;
 }
@@ -187,7 +187,7 @@ font-style: italic;
 
     color: rgba(5, 30, 250, 1);
     text-align: center;
-font-style: italic;
+    font-style: italic;
     font-family: "Avenir";
     font-size: 4em;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
@@ -223,6 +223,8 @@ font-style: italic;
     padding: 2em;
 }
 .blog-card > .card {
+    margin: 0 auto;
+    width: 75%;
     text-align: center;
     margin-bottom: 20px;
     margin-top: 25px;
@@ -296,7 +298,7 @@ font-style: italic;
     text-decoration: none;
     color: white;
     font-size: 1.5em;
-font-style: italic;
+    font-style: italic;
     font-family: "Avenir";
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
@@ -372,7 +374,6 @@ font-style: italic;
 }
 
 
-
 .pagination a, .pagination span.current, .pagination span.gap {
     float: left;
     color: white;
@@ -415,6 +416,6 @@ font-style: italic;
 
 .paginate-card {
     background-color: rgba(0, 0, 0, 0.0);
-
+margin: 0 auto;
     margin-top: 25px;
 }

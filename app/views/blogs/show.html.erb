@@ -1,41 +1,42 @@
 <div class="col-sm-12 blog-main">
-    <% if @blog.image? %>
-        <div class="container ">
-            <div class="row">
-                <div class="blog-carousel">
-                    <div id="carouselExampleControls" data-interval="false" class="carousel slide" >
-                        <div class="carousel-inner" role="listbox">
-                            <div class="carousel-item active">
+    <div class="container">
+        <% if @blog.image? %>
+            <div class="container ">
+                <div class="row">
+                    <div class="blog-carousel">
+                        <div id="carouselExampleControls" data-interval="false" class="carousel slide" >
+                            <div class="carousel-inner" role="listbox">
+                                <div class="carousel-item active">
 
-                                <%= image_tag @blog.image, width: '90%', height: '60%', class: 'blogs' %>
-                            </div>
-                            <% if @blog.image2? %>
-                                <div class="carousel-item ">
-
-                                    <%= image_tag @blog.image2, width: '90%', height: '60%', class: 'blogs' %>
+                                    <%= image_tag @blog.image, width: '80%', height: '60%', class: 'blogs' %>
                                 </div>
-                                <% if @blog.image3? %>
-                                    <div class="carousel-item">
+                                <% if @blog.image2? %>
+                                    <div class="carousel-item ">
 
-                                        <%= image_tag @blog.image3, width: '90%', height: '60%', class: 'blogs' %>
+                                        <%= image_tag @blog.image2, width: '80%', height: '60%', class: 'blogs' %>
                                     </div>
+                                    <% if @blog.image3? %>
+                                        <div class="carousel-item">
+
+                                            <%= image_tag @blog.image3, width: '80%', height: '60%', class: 'blogs' %>
+                                        </div>
+                                    <% end %>
+                                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
                                 <% end %>
-                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Previous</span>
-                                </a>
-                                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="sr-only">Next</span>
-                                </a>
-                            <% end %>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    <% end %>
-
+        <% end %>
+    </div>
 </div>
 
 <div class="col-sm-12 ">

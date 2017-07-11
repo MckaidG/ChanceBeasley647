@@ -1,6 +1,5 @@
 
 <div class="col-md-12">
-    <hr>
     <% unless current_user.is_a?(GuestUser) %>
         <%= render 'comments/comment_form' %>
     <% end %>
