@@ -1,6 +1,8 @@
 @import 'bootstrap';
 
+@import url('https: //fonts.googleapis.com/css?family=Francois+One');
 body {
+    font-family: 'Francois One', sans-serif;
 }
 
 #background {
@@ -19,7 +21,7 @@ body {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.60);
 }
 
 
@@ -42,7 +44,7 @@ body {
 
 .image_link {
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     margin-top: 15px;
     max-width: '100%';
 }
@@ -137,7 +139,7 @@ body {
     margin-top: 10px;
     position: relative;
     padding: 1rem;
-    font-weight: 900;
+    font-size: 1.25em;
     color: white;
 
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
@@ -163,7 +165,7 @@ body {
     2px 1px 0 rgba(0, 0, 0, 0.50),
     -2px 1px 0 rgba(0, 0, 0, 0.50),
     2px -1px 0 rgba(0, 0, 0, 0.50),
-    -2px -1px 0 rgba(0, 0, 0, 0.50);
+    -2px -1px 0 rgba(0, 0, 0, 0.60);
 }
 
 .nav-link:hover,
@@ -185,7 +187,7 @@ body {
 .blog-title {
     text-align: center;
 
-    color: rgba(5, 30, 250, 1);
+    color: rgb(255, 255, 255 );
     text-align: center;
     font-style: italic;
     font-family: "Avenir";
@@ -220,7 +222,8 @@ body {
 
 .blog-content {
     color: white;
-    padding: 2em;
+    padding: 1em;
+    font-size: 1.5em;
 }
 .blog-card > .card {
     margin: 0 auto;
@@ -273,7 +276,7 @@ body {
     2px 1px 0 rgba(0, 0, 0, 0.50),
     -2px 1px 0 rgba(0, 0, 0, 0.50),
     2px -1px 0 rgba(0, 0, 0, 0.50),
-    -2px -1px 0 rgba(0, 0, 0, 0.50);
+    -2px -1px 0 rgba(0, 0, 0, 0.60);
 }
 .button {
     background-color: white;
@@ -283,9 +286,9 @@ body {
     margin: 0 auto;
 }
 .jumbo-card {
-background-color: transparent;
-border: none;
-margin: 0 auto;
+    background-color: transparent;
+    border: none;
+    margin: 0 auto;
 }
 .blog-index-card {
     margin-top: 10px;
@@ -298,34 +301,34 @@ margin: 0 auto;
 }
 .card-title-button {
     text-decoration: none;
-    color: white;
-    font-size: 1.5em;
+    color: blue;
+    font-size: 2.25em;
     font-style: italic;
     font-family: "Avenir";
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
-    -1px 1px 0 rgba(0, 0, 0, 0.50),
-    1px -1px 0 rgba(0, 0, 0, 0.50),
-    -1px -1px 0 rgba(0, 0, 0, 0.50),
-    0px 1px 0 rgba(0, 0, 0, 0.50),
-    0px -1px 0 rgba(0, 0, 0, 0.50),
-    -1px 0px 0 rgba(0, 0, 0, 0.50),
-    1px 0px 0 rgba(0, 0, 0, 0.50),
-    2px 2px 0 rgba(0, 0, 0, 0.50),
-    -2px 2px 0 rgba(0, 0, 0, 0.50),
-    2px -2px 0 rgba(0, 0, 0, 0.50),
-    -2px -2px 0 rgba(0, 0, 0, 0.50),
-    0px 2px 0 rgba(0, 0, 0, 0.50),
-    0px -2px 0 rgba(0, 0, 0, 0.50),
-    -2px 0px 0 rgba(0, 0, 0, 0.50),
-    2px 0px 0 rgba(0, 0, 0, 0.50),
-    1px 2px 0 rgba(0, 0, 0, 0.50),
-    -1px 2px 0 rgba(0, 0, 0, 0.50),
-    1px -2px 0 rgba(0, 0, 0, 0.50),
-    -1px -2px 0 rgba(0, 0, 0, 0.50),
-    2px 1px 0 rgba(0, 0, 0, 0.50),
-    -2px 1px 0 rgba(0, 0, 0, 0.50),
-    2px -1px 0 rgba(0, 0, 0, 0.50),
-    -2px -1px 0 rgba(0, 0, 0, 0.50);
+    text-shadow: 1px 1px 0 white,
+    -1px 1px 0 white,
+    1px -1px 0 white,
+    -1px -1px 0 white,
+    0px 1px 0 white,
+    0px -1px 0 white,
+    -1px 0px 0 white,
+    1px 0px 0 white,
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    2px -2px 0 white,
+    -2px -2px 0 white,
+    0px 2px 0 white,
+    0px -2px 0 white,
+    -2px 0px 0 white,
+    2px 0px 0 white,
+    1px 2px 0 white,
+    -1px 2px 0 white,
+    1px -2px 0 white,
+    -1px -2px 0 white,
+    2px 1px 0 white,
+    -2px 1px 0 white,
+    2px -1px 0 white,
+    -2px -1px 0 rgba(0, 0, 0, 0.60);
 }
 
 .card-title-button:hover {
@@ -357,7 +360,7 @@ margin: 0 auto;
     2px 1px 0 rgba(0, 0, 0, 0.50),
     -2px 1px 0 rgba(0, 0, 0, 0.50),
     2px -1px 0 rgba(0, 0, 0, 0.50),
-    -2px -1px 0 rgba(0, 0, 0, 0.50);
+    -2px -1px 0 rgba(0, 0, 0, 0.60);
 }
 
 /* Pagination */
@@ -382,7 +385,7 @@ margin: 0 auto;
     padding: 0 14px;
     line-height: 38px;
     text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.50);
+    background-color: rgba(0, 0, 0, 0.60);
     border-left-width: 0;
 }
 
@@ -418,26 +421,32 @@ margin: 0 auto;
 
 .paginate-card {
     background-color: rgba(0, 0, 0, 0.0);
-margin: 0 auto;
+    margin: 0 auto;
     margin-top: 25px;
 }
 .blog-footer {
-margin-top: 100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    
 }
 .carousel-card {
-margin-top: 25px;}
+    width: 75%;
+    margin: 0 auto;
+    margin-top: 25px;
+}
 
 .jumbo {
-margin: 0 auto;
+    margin: 0 auto;
 }
 .sponsor-card {
-background-color: white;
+    background-color: white;
 }
 .sponsor-contact {
-color: black;
+    color: black;
 }
 .sponsor-log {
-margin-top: 15px;}
+    margin-top: 15px;
+}
 
 .social-card {
     margin-top: 8px;
@@ -446,9 +455,15 @@ margin-top: 15px;}
     margin-top: 15px;
 }
 #south-log {
-margin-top: 15px;
+    margin-top: 15px;
 }
 .southvalley-card {
-background-color: white;
-margin-top: 15px;
+    background-color: white;
+    margin-top: 15px;
+}
+
+.footer_card {
+    color: white;
+
+    background-color: rgba(0, 0, 0, 0.60);
 }

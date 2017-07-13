@@ -1,9 +1,10 @@
 @import "bootstrap";
-@import url('https: //fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https: //fonts.googleapis.com/css?family=Francois+One');
 
 /* Space out content a bit */
 
 body {
+font-family: 'Francois One', sans-serif;
 }
 
 /* background image */
@@ -113,7 +114,7 @@ body {
     margin-top: 10px;
     position: relative;
     padding: 1rem;
-    font-weight: 900;
+    font-size: 1.25em;
     color: white;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),

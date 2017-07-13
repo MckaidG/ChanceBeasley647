@@ -2,14 +2,11 @@
         <div class="card">
             <% if blog_item.image? %>
                 <div class="image_link">
-                    <div class="card blog_image_card">
                         <%= link_to(image_tag(blog_img(blog_item.image), width: '50%'), blog_path(blog_item.id)) %>
-                    </div>
                     <hr style='height:2px;background-color:white;'>
                 </div>
             <% end %>
             <% unless blog_item.image? %>
-                </br>
             <% end %>
             <div class="card-block">
                 <h4 class="card-title"><%= link_to blog_item.title, blog_path(blog_item.id), class: "card-title-button" %></h4>

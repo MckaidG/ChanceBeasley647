@@ -1,27 +1,38 @@
-<div class="col-md-12  blog-footer">
+<div class="col-md-8  blog-footer">
+
+
+    <div class="card footer_card">
+        <h4 class="follow">Follow</h4>
+
+        <div class="card social-card">
+            <%= link_to 'Facebook', "https://www.facebook.com/chance.beasley.35?ref=br_rs", class: "btn btn-primary" %>
+        </div>
+
+        <div class="card social-card">
+            <%= link_to 'Instagram', "https://www.instagram.com/motobeast647/", class: "btn btn-danger" %>
+        </div>
+
+        <div class="card social-card">
+
+            <%= link_to 'Twitter', "https://twitter.com/motobeast_647", class: "btn btn-info" %>
+        </div>
+
+
+    </div>
+
+
     <div class='card sidebar_card'>
         <div class="sidebar-module sidebar-module-inset">
-            <h4 class= "sidebar-title">Sponsors</h4>
-            <hr>
-            <div class= 'sidebar-title'>Ruby</div>
+            <h4>Sponsors</h4>
+
+            <div class="card sponsor-card">
+                <%= image_tag "logo.png", alt: "Mountain Land Design", id: 'sponsor-log' %>
+                </br>
+                <h5 class="sponsor-contact"></h5>
+            </div>
+
         </div>
     </div>
 
 
-    <div class='card sidebar_card'>
-        <div class="sidebar-module">
-            <h4 class= "sidebar-title">Topics</h4>
-            <hr>
-        </div>
-    </div>
-
-
-    <div class='card sidebar_card'>
-        <div class="sidebar-module">
-            <h4 class= "sidebar-title">Elsewhere</h4>
-            <hr>
-            <ol class="list-unstyled social-links">
-            </ol>
-        </div>
-    </div>
 </div>

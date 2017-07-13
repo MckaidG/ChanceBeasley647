@@ -27,10 +27,6 @@ module ApplicationHelper
                 url: root_path,
                 title: 'Updates'
             },
-           {
-                url: pages_contact_path,
-                title: 'Follow'
-            },
             {
                 url: pages_about_path,
                 title: 'About'
