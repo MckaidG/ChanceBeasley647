@@ -281,7 +281,11 @@ body {
 }
 #profileimg {
     margin: 0 auto;
-    margin-bottom: 25px;
+}
+.jumbo-card {
+background-color: transparent;
+border: none;
+margin: 0 auto;
 }
 .blog-index-card {
     margin-top: 10px;
@@ -425,4 +429,26 @@ margin-top: 25px;}
 
 .jumbo {
 margin: 0 auto;
+}
+.sponsor-card {
+background-color: white;
+}
+.sponsor-contact {
+color: black;
+}
+.sponsor-log {
+margin-top: 15px;}
+
+.social-card {
+    margin-top: 8px;
+}
+.follow {
+    margin-top: 15px;
+}
+#south-log {
+margin-top: 15px;
+}
+.southvalley-card {
+background-color: white;
+margin-top: 15px;
 }

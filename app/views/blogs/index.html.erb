@@ -1,6 +1,6 @@
 
 <%= render 'shared/blog_jumbotron' %>
-<div class="col-sm-9 blog-main">
+<div class="col-sm-8 blog-main">
     <%= render partial: 'blog_item', collection: @blogs.order('created_at DESC') %>
 
 </div>

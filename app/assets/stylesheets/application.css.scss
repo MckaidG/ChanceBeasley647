@@ -1,5 +1,6 @@
 @import "bootstrap";
-@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+@import url('https: //fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
 /* Space out content a bit */
 
 body {
@@ -18,7 +19,7 @@ body {
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: image-url('chance.jpg') no-repeat;
+    background: image-url('wallpaper.jpg') no-repeat;
     background-size: cover;
 }
 .title {
@@ -230,11 +231,12 @@ p {
     margin-right: 5px;
 }
 
-.app-nav .brand-nav  {
-color: white;
-font-family: "Gloria Hallelujah";
-font-size: 2.5em;
-text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+.app-nav .brand-nav {
+    color: white;
+    font-family: "Avenir";
+    font-style: italic;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
     -1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -260,14 +262,19 @@ text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 .login-card {
+    width: 75%;
+    margin: 0 auto;
+    color: white;
     margin-top: 35px;
-    margin-left: 10%;
-    margin-right: 10%;
+}
+.login-card > .card {
+    background-color: rgba(0, 0, 0, 0.50);
 }
 .display-3 {
     color: white;
-    font-family: "Gloria Hallelujah";
     font-size: 7em;
+    font-family: "Avenir";
+    font-style: italic;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -297,4 +304,10 @@ text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
 .button {
     background-color: white;
     margin-top: 10px;
+}
+.social-card {
+    margin-top: 8px;
+}
+.follow {
+    margin-top: 15px;
 }
