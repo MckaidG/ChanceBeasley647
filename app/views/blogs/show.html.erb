@@ -1,6 +1,7 @@
 <div class="col-sm-12 blog-main">
-    <div class="card carousel-card">
-        <% if @blog.image? %>
+
+    <% if @blog.image? %>
+        <div class="card carousel-card">
             <div class="container ">
                 <div class="row">
                     <div class="blog-carousel">
@@ -8,17 +9,17 @@
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
 
-                                    <%= image_tag @blog.image, width: '90%', height: '60%', class: 'blogs' %>
+                                    <%= image_tag @blog.image, width: '100%', height: '60%', class: 'blogs' %>
                                 </div>
                                 <% if @blog.image2? %>
                                     <div class="carousel-item ">
 
-                                        <%= image_tag @blog.image2, width: '90%', height: '60%', class: 'blogs' %>
+                                        <%= image_tag @blog.image2, width: '100%', height: '60%', class: 'blogs' %>
                                     </div>
                                     <% if @blog.image3? %>
                                         <div class="carousel-item">
 
-                                            <%= image_tag @blog.image3, width: '90%', height: '60%', class: 'blogs' %>
+                                            <%= image_tag @blog.image3, width: '100%', height: '60%', class: 'blogs' %>
                                         </div>
                                     <% end %>
                                     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -36,23 +37,22 @@
                 </div>
             </div>
         <% end %>
-    </div>
+        </div>
 </div>
 
-<div class="col-sm-12 ">
-    <div class="blog-card">
-        <div class="card" >
-            <div class="blog-info">
-                <h1 class="blog-title"><%= @blog.title %></h1>
+<div class="col-md-12 ">
+    <div class="card blog-card" >
 
-                <hr style='background-color:white;'>
-                <div class="blog-content"><%= markdown @blog.body %></div>
+        <div class="blog-info">
+            <h1 class="blog-title"><%= @blog.title %></h1>
 
-                <% if current_user.admin %>
-                    <%= link_to "Edit Item", edit_blog_path(@blog), class: 'btn btn-sm btn-warning' %>
-                    <%= link_to "Delete", blog_url, method: :delete, data: { confirm: "You Sure?" }, class: 'btn btn-sm btn-warning' %>
-                <% end %>
-            </div>
+            <hr style='background-color:white;'>
+            <div class="blog-content"><%= markdown @blog.body %></div>
+
+            <% if current_user.admin %>
+                <%= link_to "Edit Item", edit_blog_path(@blog), class: 'btn btn-sm btn-warning' %>
+                <%= link_to "Delete", blog_url, method: :delete, data: { confirm: "You Sure?" }, class: 'btn btn-sm btn-warning' %>
+            <% end %>
         </div>
     </div>
 </div>

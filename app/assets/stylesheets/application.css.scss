@@ -4,7 +4,7 @@
 /* Space out content a bit */
 
 body {
-font-family: 'Francois One', sans-serif;
+    font-family: 'Francois One', sans-serif;
 }
 
 /* background image */
@@ -226,17 +226,14 @@ p {
     background-color: rgba(0, 0, 0, 0.65)
 }
 
-.app-nav span {
-    color: white;
-    margin-left: 5px;
-    margin-right: 5px;
-}
 
-.app-nav .brand-nav {
-    color: white;
-    font-family: "Avenir";
+ .brand-nav {
+     color: white;
+     margin-right: 40px;
+    font-size: 2em;
     font-style: italic;
-    font-size: 2.5em;
+    font-family: "Avenir";
+    font-weight: 1000;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -311,4 +308,15 @@ p {
 }
 .follow {
     margin-top: 15px;
+}
+
+.about {
+    background-color: rgba(0, 0, 0, 0.60);
+    color: white;
+    margin-top: 50px;
+    padding: 1em;
+}
+#chanceprofile {
+    margin: 0 auto;
+    width: 85%;
 }

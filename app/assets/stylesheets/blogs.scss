@@ -136,12 +136,12 @@ body {
 }
 .nav-link {
     margin-left: 5px;
+
     margin-top: 10px;
     position: relative;
     padding: 1rem;
     font-size: 1.25em;
     color: white;
-
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -165,7 +165,7 @@ body {
     2px 1px 0 rgba(0, 0, 0, 0.50),
     -2px 1px 0 rgba(0, 0, 0, 0.50),
     2px -1px 0 rgba(0, 0, 0, 0.50),
-    -2px -1px 0 rgba(0, 0, 0, 0.60);
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 
 .nav-link:hover,
@@ -178,11 +178,37 @@ body {
 .nav-link.active {
     color: #fff;
 }
-.navbar-brand {
+ .brand-nav {
+    margin-right: 40px;
+    color: white;
     font-size: 2em;
     font-style: italic;
     font-family: "Avenir";
     font-weight: 1000;
+    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
+    -1px 1px 0 rgba(0, 0, 0, 0.50),
+    1px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px -1px 0 rgba(0, 0, 0, 0.50),
+    0px 1px 0 rgba(0, 0, 0, 0.50),
+    0px -1px 0 rgba(0, 0, 0, 0.50),
+    -1px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 2px 0 rgba(0, 0, 0, 0.50),
+    -2px 2px 0 rgba(0, 0, 0, 0.50),
+    2px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px -2px 0 rgba(0, 0, 0, 0.50),
+    0px 2px 0 rgba(0, 0, 0, 0.50),
+    0px -2px 0 rgba(0, 0, 0, 0.50),
+    -2px 0px 0 rgba(0, 0, 0, 0.50),
+    2px 0px 0 rgba(0, 0, 0, 0.50),
+    1px 2px 0 rgba(0, 0, 0, 0.50),
+    -1px 2px 0 rgba(0, 0, 0, 0.50),
+    1px -2px 0 rgba(0, 0, 0, 0.50),
+    -1px -2px 0 rgba(0, 0, 0, 0.50),
+    2px 1px 0 rgba(0, 0, 0, 0.50),
+    -2px 1px 0 rgba(0, 0, 0, 0.50),
+    2px -1px 0 rgba(0, 0, 0, 0.50),
+    -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 .blog-title {
     text-align: center;
@@ -248,36 +274,6 @@ body {
 }
 
 
-.app-nav .brand-nav {
-    color: white;
-    font-family: "Avenir";
-    font-style: italic;
-    font-size: 2.5em;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
-    -1px 1px 0 rgba(0, 0, 0, 0.50),
-    1px -1px 0 rgba(0, 0, 0, 0.50),
-    -1px -1px 0 rgba(0, 0, 0, 0.50),
-    0px 1px 0 rgba(0, 0, 0, 0.50),
-    0px -1px 0 rgba(0, 0, 0, 0.50),
-    -1px 0px 0 rgba(0, 0, 0, 0.50),
-    1px 0px 0 rgba(0, 0, 0, 0.50),
-    2px 2px 0 rgba(0, 0, 0, 0.50),
-    -2px 2px 0 rgba(0, 0, 0, 0.50),
-    2px -2px 0 rgba(0, 0, 0, 0.50),
-    -2px -2px 0 rgba(0, 0, 0, 0.50),
-    0px 2px 0 rgba(0, 0, 0, 0.50),
-    0px -2px 0 rgba(0, 0, 0, 0.50),
-    -2px 0px 0 rgba(0, 0, 0, 0.50),
-    2px 0px 0 rgba(0, 0, 0, 0.50),
-    1px 2px 0 rgba(0, 0, 0, 0.50),
-    -1px 2px 0 rgba(0, 0, 0, 0.50),
-    1px -2px 0 rgba(0, 0, 0, 0.50),
-    -1px -2px 0 rgba(0, 0, 0, 0.50),
-    2px 1px 0 rgba(0, 0, 0, 0.50),
-    -2px 1px 0 rgba(0, 0, 0, 0.50),
-    2px -1px 0 rgba(0, 0, 0, 0.50),
-    -2px -1px 0 rgba(0, 0, 0, 0.60);
-}
 .button {
     background-color: white;
     margin-top: 10px;
@@ -301,7 +297,7 @@ body {
 }
 .card-title-button {
     text-decoration: none;
-    color: blue;
+    color: rgba(0, 0, 0, 0.25);
     font-size: 2.25em;
     font-style: italic;
     font-family: "Avenir";
@@ -333,33 +329,32 @@ body {
 
 .card-title-button:hover {
     text-decoration: none;
-    color: white;
-    font-size: 1.4em;
-    font-family: "Avenir";
+    color: rgba(0, 0, 0, 0.25);
     font-style: italic;
-    text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
-    -1px 1px 0 rgba(0, 0, 0, 0.50),
-    1px -1px 0 rgba(0, 0, 0, 0.50),
-    -1px -1px 0 rgba(0, 0, 0, 0.50),
-    0px 1px 0 rgba(0, 0, 0, 0.50),
-    0px -1px 0 rgba(0, 0, 0, 0.50),
-    -1px 0px 0 rgba(0, 0, 0, 0.50),
-    1px 0px 0 rgba(0, 0, 0, 0.50),
-    2px 2px 0 rgba(0, 0, 0, 0.50),
-    -2px 2px 0 rgba(0, 0, 0, 0.50),
-    2px -2px 0 rgba(0, 0, 0, 0.50),
-    -2px -2px 0 rgba(0, 0, 0, 0.50),
-    0px 2px 0 rgba(0, 0, 0, 0.50),
-    0px -2px 0 rgba(0, 0, 0, 0.50),
-    -2px 0px 0 rgba(0, 0, 0, 0.50),
-    2px 0px 0 rgba(0, 0, 0, 0.50),
-    1px 2px 0 rgba(0, 0, 0, 0.50),
-    -1px 2px 0 rgba(0, 0, 0, 0.50),
-    1px -2px 0 rgba(0, 0, 0, 0.50),
-    -1px -2px 0 rgba(0, 0, 0, 0.50),
-    2px 1px 0 rgba(0, 0, 0, 0.50),
-    -2px 1px 0 rgba(0, 0, 0, 0.50),
-    2px -1px 0 rgba(0, 0, 0, 0.50),
+    font-family: "Avenir";
+    text-shadow: 1px 1px 0 white,
+    -1px 1px 0 white,
+    1px -1px 0 white,
+    -1px -1px 0 white,
+    0px 1px 0 white,
+    0px -1px 0 white,
+    -1px 0px 0 white,
+    1px 0px 0 white,
+    2px 2px 0 white,
+    -2px 2px 0 white,
+    2px -2px 0 white,
+    -2px -2px 0 white,
+    0px 2px 0 white,
+    0px -2px 0 white,
+    -2px 0px 0 white,
+    2px 0px 0 white,
+    1px 2px 0 white,
+    -1px 2px 0 white,
+    1px -2px 0 white,
+    -1px -2px 0 white,
+    2px 1px 0 white,
+    -2px 1px 0 white,
+    2px -1px 0 white,
     -2px -1px 0 rgba(0, 0, 0, 0.60);
 }
 
@@ -430,7 +425,8 @@ body {
     
 }
 .carousel-card {
-    width: 75%;
+    padding: 3%;
+    width: 50%;
     margin: 0 auto;
     margin-top: 25px;
 }
@@ -466,4 +462,12 @@ body {
     color: white;
 
     background-color: rgba(0, 0, 0, 0.60);
+}
+.blog-card {
+    margin: 0 auto; 
+    background-color: rgba(0, 0, 0, 0.60);
+    color: white;
+    margin-top: 50px;
+    padding: 1em;
+    width: 75%;
 }

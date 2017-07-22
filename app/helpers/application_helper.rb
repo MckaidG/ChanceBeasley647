@@ -29,7 +29,7 @@ module ApplicationHelper
             },
             {
                 url: pages_about_path,
-                title: 'About'
+                title: 'Bio'
             },
 
         ]

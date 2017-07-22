@@ -12,7 +12,7 @@ class BlogsController < ApplicationController
     # GET /blogs/1
     # GET /blogs/1.json
     def show
-        @blog = Blog.includes(:comments).find(params[:id])
+        @blog = Blog.includes(:comments).friendly.find(params[:id])
         @comment = Comment.new( :blog => @blog )
         @comment.user = current_user
     end
@@ -21,7 +21,7 @@ class BlogsController < ApplicationController
     def new
         @blog = Blog.new
     end
-
+    
     # GET /blogs/1/edit
     def edit
     end
@@ -74,7 +74,7 @@ class BlogsController < ApplicationController
     end
 
     def set_blog
-        @blog = Blog.find(params[:id])
+        @blog = Blog.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

@@ -65,4 +65,6 @@ gem 'coderay', '~> 1.1', '>= 1.1.1'
 gem 'friendly_id', '~> 5.1.0'
 
 gem 'bootstrap4-kaminari-views'
+
 ruby "2.4.0"
+

@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @update.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @update.body %>
+</p>
+
+<p>
+  <strong>Image:</strong>
+  <%= @update.image %>
+</p>
+
+<p>
+  <strong>Image2:</strong>
+  <%= @update.image2 %>
+</p>
+
+<p>
+  <strong>Image3:</strong>
+  <%= @update.image3 %>
+</p>
+
+<p>
+  <strong>Slug:</strong>
+  <%= @update.slug %>
+</p>
+
+<%= link_to 'Edit', edit_update_path(@update) %> |
+<%= link_to 'Back', updates_path %>
