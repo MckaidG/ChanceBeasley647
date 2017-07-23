@@ -1,5 +1,6 @@
 @import 'bootstrap';
 
+@import url('https: //fonts.googleapis.com/css?family=Architects+Daughter');
 @import url('https: //fonts.googleapis.com/css?family=Francois+One');
 body {
     font-family: 'Francois One', sans-serif;
@@ -137,6 +138,7 @@ body {
 .nav-link {
     margin-left: 5px;
 
+font-family: 'Architects Daughter', cursive;
     margin-top: 10px;
     position: relative;
     padding: 1rem;
@@ -178,13 +180,11 @@ body {
 .nav-link.active {
     color: #fff;
 }
- .brand-nav {
-    margin-right: 40px;
+.brand-nav { 
+    width: 15%;
     color: white;
-    font-size: 2em;
-    font-style: italic;
-    font-family: "Avenir";
-    font-weight: 1000;
+    font-size: 1.75em;
+font-family: 'Architects Daughter', cursive;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
@@ -213,10 +213,11 @@ body {
 .blog-title {
     text-align: center;
 
-    color: rgb(255, 255, 255 );
+    color: rgb(0, 92, 230);
     text-align: center;
     font-style: italic;
-    font-family: "Avenir";
+
+font-family: 'Architects Daughter', cursive;
     font-size: 4em;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.35),
     -1px 1px 0 rgba(255, 255, 255, 0.35),
@@ -276,7 +277,7 @@ body {
 
 .button {
     background-color: white;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 #profileimg {
     margin: 0 auto;
@@ -297,10 +298,12 @@ body {
 }
 .card-title-button {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.25);
+
+    color: rgb(0, 92, 230);
     font-size: 2.25em;
     font-style: italic;
-    font-family: "Avenir";
+
+font-family: 'Architects Daughter', cursive;
     text-shadow: 1px 1px 0 white,
     -1px 1px 0 white,
     1px -1px 0 white,
@@ -329,9 +332,11 @@ body {
 
 .card-title-button:hover {
     text-decoration: none;
-    color: rgba(0, 0, 0, 0.25);
+
+    color: rgb(0, 92, 230);
     font-style: italic;
-    font-family: "Avenir";
+
+font-family: 'Architects Daughter', cursive;
     text-shadow: 1px 1px 0 white,
     -1px 1px 0 white,
     1px -1px 0 white,
@@ -422,7 +427,6 @@ body {
 .blog-footer {
     margin: 0 auto;
     margin-top: 50px;
-    
 }
 .carousel-card {
     padding: 3%;
@@ -464,7 +468,7 @@ body {
     background-color: rgba(0, 0, 0, 0.60);
 }
 .blog-card {
-    margin: 0 auto; 
+    margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.60);
     color: white;
     margin-top: 50px;
