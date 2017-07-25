@@ -53,9 +53,12 @@
             <% if current_user.admin %>
                 <%= link_to "Edit Item", edit_blog_path(@blog), class: 'btn btn-sm btn-warning' %>
                 <%= link_to "Delete", blog_url, method: :delete, data: { confirm: "You Sure?" }, class: 'btn btn-sm btn-warning' %>
+
+                    <%= link_to "Back", blogs_path, class: "btn btn-sm btn-warning" %>
             <% end %>
         </div>
     </div>
 </div>
 <%= render 'shared/blog_comments' %>
 <%= render 'shared/footer' %>
+
