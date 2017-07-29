@@ -1,7 +1,7 @@
 @import "bootstrap";
 @import url('https: //fonts.googleapis.com/css?family=Francois+One');
-
 @import url('https: //fonts.googleapis.com/css?family=Architects+Daughter');
+
 /* Space out content a bit */
 
 body {
@@ -113,7 +113,7 @@ body {
 .nav-link {
     margin-left: 5px;
 
-font-family: 'Architects Daughter', cursive;
+    font-family: 'Architects Daughter', cursive;
     margin-top: 10px;
     position: relative;
     padding: 1rem;
@@ -231,12 +231,12 @@ p {
 }
 
 
-.brand-nav { 
+.brand-nav {
     margin-left: 5px;
     margin-right: 5px;
     color: white;
     font-size: 1.75em;
-font-family: 'Architects Daughter', cursive;
+    font-family: 'Architects Daughter', cursive;
     text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.50),
     -1px 1px 0 rgba(0, 0, 0, 0.50),
     1px -1px 0 rgba(0, 0, 0, 0.50),
