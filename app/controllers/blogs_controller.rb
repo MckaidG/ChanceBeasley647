@@ -9,7 +9,7 @@ class BlogsController < ApplicationController
         @blogs = Blog.page(params[:page]).per(3)
     end
 
-    j GET /blogs/1
+    # GET /blogs/1
     # GET /blogs/1.json
     def show
         @blog = Blog.includes(:comments).friendly.find(params[:id])
@@ -19,7 +19,7 @@ class BlogsController < ApplicationController
 
     # GET /blogs/new
     def new
-        @blog = Blog.new
+j       @blog = Blog.new
     end
 
     # GET /blogs/1/edit
