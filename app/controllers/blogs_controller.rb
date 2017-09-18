@@ -9,7 +9,7 @@ class BlogsController < ApplicationController
         @blogs = Blog.page(params[:page]).per(3)
     end
 
-    # GET /blogs/1
+    j GET /blogs/1
     # GET /blogs/1.json
     def show
         @blog = Blog.includes(:comments).friendly.find(params[:id])
@@ -29,7 +29,7 @@ class BlogsController < ApplicationController
     # POST /blogs
     # POST /blogs.json
     def create
-        @blog = Blog.new(blog_params)
+        @blog = Blog.friendly.new(blog_params)
 
         respond_to do |format|
             if @blog.save
