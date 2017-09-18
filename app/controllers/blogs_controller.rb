@@ -29,7 +29,7 @@ class BlogsController < ApplicationController
     # POST /blogs
     # POST /blogs.json
     def create
-        @blog = Blog.friendly.new(blog_params)
+        @blog = Blog.new(blog_params)
 
         respond_to do |format|
             if @blog.save
@@ -81,9 +81,7 @@ class BlogsController < ApplicationController
     def blog_params
         params.require(:blog).permit(:title,
             :body,
-            :image,
-            :image2,
-        :image3)
+       )
     end
 
     def verify_is_admin
