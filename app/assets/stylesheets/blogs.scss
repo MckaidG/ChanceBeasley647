@@ -75,8 +75,9 @@ body {
 
 
 .jumbotron {
-    background-color: rgba(0, 0, 0, 0.0);
+    background-color: rgba(0, 0, 0, 0.75);
     margin-top: 25px;
+    width: 2500px;
 }
 
 .display-3 {
@@ -254,7 +255,6 @@ body {
     font-size: 1.5em;
 }
 .blog-card > .card {
-    margin: 0 auto;
     text-align: center;
     margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.75);
@@ -439,6 +439,8 @@ body {
 .jumbo {
     margin: 0 auto;
 }
+
+
 .sponsor-card {
     background-color: white;
 }
@@ -475,4 +477,8 @@ body {
     margin-top: 50px;
     padding: 1em;
     width: 75%;
+}
+.comment-form {
+    margin-top: 10px;
+text-align: center;
 }

@@ -299,6 +299,7 @@ p {
     2px 1px 0 rgba(0, 0, 0, 0.50),
     -2px 1px 0 rgba(0, 0, 0, 0.50),
     2px -1px 0 rgba(0, 0, 0, 0.50),
+
     -2px -1px 0 rgba(0, 0, 0, 0.50);
 }
 
@@ -314,12 +315,25 @@ p {
 }
 
 .about {
+    
     background-color: rgba(0, 0, 0, 0.60);
     color: white;
     margin-top: 50px;
-    padding: 1em;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 #chanceprofile {
     margin: 0 auto;
-    width: 85%;
+    width: 80%;
+}
+
+.card > .about-text {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 8px;
+background-color: rgba(255, 255, 255, 0.50);
+}
+.about-info {
+margin: 0 auto;
+padding: 10px;
 }

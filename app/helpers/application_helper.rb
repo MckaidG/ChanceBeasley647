@@ -27,10 +27,6 @@ module ApplicationHelper
                 url: root_path,
                 title: 'Updates'
             },
-            {
-                url: pages_about_path,
-                title: 'Bio'
-            },
 
         ]
     end

@@ -1,4 +1,4 @@
-
+<div class="comment-form">
 <div class="col-md-12">
     <% unless current_user.is_a?(GuestUser) %>
         <%= render 'comments/comment_form' %>
@@ -7,4 +7,5 @@
         <br/>
         <%= render @blog.comments.where(created_at: 1.day.ago..Time.now).order('created_at DESC') %>
     </div>
+</div>
 </div>
