@@ -1,18 +1,18 @@
-    <div class="blog-index-card">
-        <div class="card">
-            <% if blog_item.image? %>
-                <div class="image_link">
-                        <%= link_to(image_tag(blog_img(blog_item.image), width: '50%'), blog_path(blog_item.id)) %>
-                    <hr style='height:2px;background-color:white;'>
-                </div>
-            <% end %>
-            <% unless blog_item.image? %>
-            <% end %>
+<div class="blog-index-card">
+    <div class="card">
+        <% if blog_item.image? %>
+            <div class="image_link">
+                <%= link_to(image_tag(blog_img(blog_item.image), width: '100%'), blog_path(blog_item.id)) %>
+            </div>
+        <% end %>
+        <% unless blog_item.image? %>
+
             <div class="card-block">
                 <h4 class="card-title"><%= link_to blog_item.title, blog_path(blog_item.id), class: "card-title-button" %></h4>
-                
-                <h4 class="card-title"><%= markdown blog_item.title %></h4>
+
             </div>
-            
-        </div>
+        <% end %>
+
+        <h4 class="blog_date" >Posted: <%= blog_item.created_at.to_date %></h4>
     </div>
+</div>

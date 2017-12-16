@@ -1,6 +1,7 @@
+
+    <% unless current_user.is_a?(GuestUser) %>
 <div class="comment-form">
 <div class="col-md-12">
-    <% unless current_user.is_a?(GuestUser) %>
         <%= render 'comments/comment_form' %>
     <% end %>
     <div id="comments" data-blog-id="<%= @blog.id %>">

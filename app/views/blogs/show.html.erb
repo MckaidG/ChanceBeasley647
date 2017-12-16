@@ -1,10 +1,9 @@
-<div class="col-sm-12 blog-main">
+<div class="col-md-12 blog-main">
 
     <% if @blog.image? %>
         <div class="card carousel-card">
             <div class="container ">
-                <div class="row">
-                    <div class="blog-carousel">
+                <div class="row"> <div class="blog-carousel">
                         <div id="carouselExampleControls" data-interval="false" class="carousel slide" >
                             <div class="carousel-inner" role="listbox">
                                 <div class="carousel-item active">
@@ -56,6 +55,8 @@
 
                 <%= link_to "Back", blogs_path, class: "btn btn-sm btn-warning" %>
             <% end %>
+
+        <h4 class="blog_date" >Posted: <%= @blog.created_at.to_date %></h4>
         </div>
     </div>
 </div>
